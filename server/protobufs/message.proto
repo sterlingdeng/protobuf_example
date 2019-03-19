@@ -1,0 +1,12 @@
+syntax = "proto3";
+package movies;
+
+
+message Message {
+  required string movie = 1;
+  required uint32 rating = 2;
+}
+
+message AllMessages {
+  repeated Message messages = 1;
+}
